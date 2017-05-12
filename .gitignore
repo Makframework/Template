@@ -1,3 +1,6 @@
 /vendor/
 /.idea/
+/languages/
+/templates/
 /composer.lock
+/index.php

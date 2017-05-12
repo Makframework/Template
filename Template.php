@@ -24,7 +24,7 @@ class Template
 
     public function registerLanguages(array $languages) : void
     {
-        $this->languages = $languages;
+        $this->languages += $languages;
     }
 
     public function registerLanguage(string $language, string $filename) : void
@@ -37,7 +37,10 @@ class Template
 
         $loader = new \Twig_Loader_Filesystem($this->pathTemplates);
         $twig = new \Twig_Environment($loader);
-        $twig->addExtension(new TranslateExtension());
+
+        $langFile = isset($this->languages[$this->lang]) ? $this->languages[$this->lang] : '';
+
+        $twig->addExtension(new TranslateExtension($langFile));
 
         return $twig->render($template, $this->data);
     }
