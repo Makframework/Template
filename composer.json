@@ -1,0 +1,21 @@
+{
+    "name": "makframework/template",
+    "description": "PHP Engine Template",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Junior Ochei Ruiz",
+            "email": "mak.hmc@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "twig/twig": "^2.0"
+    },
+    "autoload": {
+      "psr-4": {
+        "Makframework\\Template\\": ""
+      }
+    }
+}
