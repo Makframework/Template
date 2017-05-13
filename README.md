@@ -78,6 +78,10 @@ The output:
 </html>
 ```
 
+## Authors
+
+- [Junior Ochei Ruiz](https://github.com/JuniorOcheiRuiz)
+
 ## License
 
 Makframework\Template is licensed under the [MIT license](LICENSE.md).
