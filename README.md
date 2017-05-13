@@ -11,7 +11,7 @@ It's a Template Engine developed with Twig as base.
 ## Installation
 
 ```bash
-$ composer require makframework/template "^1.0"
+$ composer require makframework/template
 ```
 
 ## Usage
